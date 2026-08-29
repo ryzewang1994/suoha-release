@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梭哈工具台 · 帮助文档</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--border:#30363d;
+  --text1:#e6edf3;--text2:#8b949e;--text3:#6e7681;
+  --accent:#6366f1;--accent2:#818cf8;--green:#3fb950;--yellow:#d29922;--red:#f85149;
+  --code:#39d353;}
+[data-theme="light"]{--bg:#ffffff;--bg2:#f6f8fa;--bg3:#eaeef2;--border:#d0d7de;
+  --text1:#1f2328;--text2:#57606a;--text3:#8c959f;
+  --accent:#4f46e5;--accent2:#4338ca;--green:#1a7f37;--yellow:#9a6700;--red:#cf222e;
+  --code:#0a7d33;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text1);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.75;font-size:14px}
+.sidebar{position:fixed;top:0;left:0;width:220px;height:100vh;background:var(--bg2);border-right:1px solid var(--border);overflow-y:auto;z-index:100}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.logo{padding:16px 16px 12px;border-bottom:1px solid var(--border)}
+.logo h1{font-size:15px;font-weight:700;color:var(--accent2)}.logo p{font-size:11px;color:var(--text3);margin-top:2px}
+.nav-g{padding:8px 16px 2px;font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-top:4px}
+.sidebar a{display:block;padding:5px 16px 5px 22px;color:var(--text2);text-decoration:none;font-size:12.5px;border-left:2px solid transparent;transition:.15s}
+.sidebar a:hover{color:var(--text1);background:var(--bg3)}
+.sidebar a.active{color:var(--accent2);border-left-color:var(--accent);background:rgba(99,102,241,.1)}
+.menu-btn{display:none;position:fixed;top:10px;left:10px;z-index:200;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:5px 10px;cursor:pointer;font-size:16px;color:var(--text1)}
+main{margin-left:220px;padding:36px 48px 80px;max-width:960px}
+section{margin-bottom:48px}
+h2{font-size:20px;font-weight:700;color:var(--text1);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border)}
+h3{font-size:15px;font-weight:600;color:var(--accent2);margin:16px 0 6px}
+h4{font-size:13px;font-weight:600;color:var(--text1);margin:12px 0 4px}
+p{color:var(--text2);margin-bottom:10px;font-size:13.5px}
+ul,ol{color:var(--text2);padding-left:18px;margin-bottom:10px;font-size:13.5px}
+li{margin-bottom:4px}li strong{color:var(--text1)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-family:Consolas,monospace;font-size:12px;color:var(--code)}
+pre{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;margin:8px 0 14px;overflow-x:auto}
+pre code{background:none;border:none;padding:0;color:var(--text1);font-size:12px}
+.tip{background:rgba(99,102,241,.08);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:10px 14px;margin:10px 0 14px;font-size:13px;color:var(--text2)}
+.tip strong{color:var(--accent2)}
+.warn{background:rgba(210,153,34,.08);border-left-color:var(--yellow)}.warn strong{color:var(--yellow)}
+.danger{background:rgba(248,81,73,.08);border-left-color:var(--red)}.danger strong{color:var(--red)}
+.ok{background:rgba(63,185,80,.08);border-left-color:var(--green)}.ok strong{color:var(--green)}
+table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:13px}
+th{background:var(--bg3);color:var(--text1);padding:7px 12px;text-align:left;border-bottom:2px solid var(--border);font-weight:600}
+td{padding:6px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:hover td{background:rgba(127,127,127,.06)}
+td code{font-size:11.5px}
+kbd{background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:1px 6px;font-family:Consolas,monospace;font-size:11px;color:var(--text1)}
+.badge{display:inline-block;border-radius:10px;padding:1px 8px;font-size:10px;font-weight:700;margin-left:4px;vertical-align:middle}
+.b-blue{background:var(--accent);color:#fff}.b-green{background:var(--green);color:#000}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 14px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.card h4{color:var(--text1);font-size:13px;font-weight:600;margin:0 0 5px}.card p{font-size:12px;margin:0}
+hr{border:none;border-top:1px solid var(--border);margin:36px 0}
+@media(max-width:860px){.sidebar{transform:translateX(-220px);transition:.3s}.sidebar.open{transform:translateX(0)}.menu-btn{display:block}main{margin-left:0;padding:56px 18px 60px}}
+.theme-btn{position:fixed;top:14px;right:18px;z-index:200;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px;color:var(--text1);transition:.15s}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent2)}
+@media(max-width:540px){main{padding:56px 12px 60px}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<button class="menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+<button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
+<nav class="sidebar">
+  <div class="logo"><h1>🎰 梭哈工具台</h1><p>用户帮助文档</p></div>
+  <div class="nav-g">入门</div>
+  <a href="#overview">产品概述</a><a href="#startup">启动与数据</a><a href="#ui">界面结构</a>
+  <div class="nav-g">主要模块</div>
+  <a href="#nav">🧭 网址导航</a><a href="#memory-master">🎓 记忆大师</a><a href="#workshop">🛠️ 工具工坊</a>
+  <a href="#actions">⚡ 一指神功</a><a href="#todos">✅ 待办管家</a>
+  <a href="#closeloop">🔄 闭环管理</a>
+  <a href="#memory">🧠 记忆长廊</a><a href="#aggregate">🔍 聚合搜索</a><a href="#stats">📊 数据看板</a>
+  <a href="#settings">⚙️ 设置</a><a href="#sticky">📌 悬浮便签</a>
+  <a href="#clipboard">📋 超级剪切板</a>
+  <div class="nav-g">工具工坊详情</div>
+  <a href="#t-char">字符统计</a><a href="#t-translate">翻译</a>
+  <a href="#t-deepseek">DeepSeek 问答</a><a href="#t-pwd">密码管理器</a><a href="#t-timestamp">时间戳</a>
+  <a href="#t-timezone">时区查看</a><a href="#t-diff">文本对比</a>
+  <a href="#t-color">颜色转换</a><a href="#t-img">图片转码</a>
+  <a href="#t-api">接口测试</a>
+  <a href="#t-search">文件查找</a><a href="#t-script">脚本执行</a><a href="#t-proc">进程管理器</a>
+  <div class="nav-g">一指神功详情</div>
+  <a href="#disk-cleanup">C盘清理</a>
+  <div class="nav-g">打包部署</div>
+  <a href="#build">打包说明</a><a href="#context-menu">右键菜单</a>
+  <a href="#datasync">数据同步</a><a href="#faq">常见问题</a>
+</nav>
+<main>
+
+<section id="overview">
+<h2>产品概述</h2>
+<p>梭哈工具台是基于 <strong>Python 3.13 + PySide6</strong> 的本地原生 GUI 桌面效率工具箱，把日常零散的本地工具集中到一个窗口，免去四处寻找的麻烦。数据本地存储（SQLite），文件夹分发、启动快。除主界面外，还提供全局能力：<strong>超级剪切板</strong>（Ctrl+Shift+V）、<strong>聚合搜索</strong>（双击 Ctrl）、悬浮便签、自动更新、自定义快捷键、开机自启。DeepSeek 问答与记忆大师 AI 导入功能需要联网。</p>
+<div class="grid2">
+  <div class="card"><h4>🧭 网址导航</h4><p>多分类书签管理，自定义搜索引擎（图标本地缓存），批量导入</p></div>
+  <div class="card"><h4>🎓 记忆大师</h4><p>自建知识词典，悬浮卡片定时滚动记忆，离线朗读，AI 智能生成导入</p></div>
+  <div class="card"><h4>🛠️ 工具工坊</h4><p>28 个效率工具：DeepSeek 问答、密码管理、翻译、接口测试等</p></div>
+  <div class="card"><h4>⚡ 一指神功</h4><p>快捷动作中心：C盘清理、进程管理、自定义脚本一键触发</p></div>
+  <div class="card"><h4>✅ 待办管家</h4><p>四象限待办，多链接、求助人、图片附件、逾期提醒</p></div>
+  <div class="card"><h4>🔄 闭环管理</h4><p>长线事项跟踪：进展时间线、里程碑、闭环结论，一键回溯导出</p></div>
+  <div class="card"><h4>🧠 记忆长廊</h4><p>剪切板自动归档（文本/图片/文件），按日历浏览，Chrome 式滚动跨天，左侧日历联动高亮</p></div>
+  <div class="card"><h4>📋 超级剪切板</h4><p>Ctrl+Shift+V 全局唤起；固定/分组、📌📋🧠 标识、固定置顶、最大条数/跨天/失效文件设置</p></div>
+  <div class="card"><h4>🔍 聚合搜索</h4><p>双击 Ctrl 唤起，一框搜书签/应用/文件/工具，系统应用显示真实图标</p></div>
+</div>
+</section>
+
+<section id="startup">
+<h2>启动与数据</h2>
+<table>
+  <tr><th>文件</th><th>默认路径</th><th>说明</th></tr>
+  <tr><td>配置文件</td><td><code>%USERPROFILE%\.suoha-console\config.json</code></td><td>存储数据库路径等启动配置</td></tr>
+  <tr><td>数据库</td><td>由 config.json 中 db_path 决定</td><td>SQLite，存储所有数据</td></tr>
+  <tr><td>工作空间</td><td>设置中配置</td><td>图标缓存、图片附件等</td></tr>
+</table>
+<div class="tip"><strong>跨路径运行：</strong>config.json 固定在用户目录，exe 放任何位置都能读到同一份数据。</div>
+<h3>系统托盘</h3>
+<p>关闭主窗口后程序托盘驻留，右键可显示悬浮便签、打开主界面、退出。</p>
+</section>
+
+<section id="ui">
+<h2>界面结构</h2>
+<ul>
+  <li><strong>标题栏：</strong>🌙/☀️ 主题切换、❓ 帮助文档、最小化/最大化/关闭到托盘</li>
+  <li><strong>左侧导航：</strong>9 个模块图标，待办管家有逾期红圈角标</li>
+  <li><strong>内容区：</strong>懒加载，首次切换时才初始化</li>
+</ul>
+<div class="tip"><strong>关闭行为：</strong>点 ✕ 是关闭到托盘，完全退出需右键托盘选"退出"。</div>
+</section>
+
+<section id="nav">
+<h2>🧭 网址导航</h2>
+<h3>书签管理</h3>
+<ul>
+  <li>左侧分类列表，右键新建/重命名/删除分类</li>
+  <li>书签卡片单击跳转，右键管理</li>
+  <li>批量导入：复制 <code>名称[Tab]URL</code> 多行后 <kbd>Ctrl+V</kbd> 粘贴</li>
+</ul>
+<h3>搜索引擎</h3>
+<p>点击 ⚙️ 管理，URL 模板用 <code>{}</code> 代替关键词，图标自动下载到本地缓存，断网后也能显示。</p>
+</section>
+
+<section id="memory-master">
+<h2>🎓 记忆大师</h2>
+<p>自建知识词典 + 桌面悬浮卡片定时滚动记忆，适合背单词、记短语、记知识点。</p>
+<h3>知识库</h3>
+<ul>
+  <li>三类条目：<strong>单词</strong>（目标语言 + 音标 + 释义）、<strong>短语/短句</strong>（目标语言 + 释义）、<strong>知识点</strong>（标题 + 内容）</li>
+  <li>左侧分类管理，自定义图标，右键重命名/删除（删除时可选移入未分类或一并删除条目）</li>
+  <li>条目支持搜索、显示/隐藏已掌握、右键编辑/标记掌握、批量删除</li>
+</ul>
+<h3>导入导出</h3>
+<ul>
+  <li>支持 JSON / Excel 导入，可指定分类或按文件中的分类列自动归类</li>
+  <li>多选或全量导出（JSON / Excel），提供导入模板下载</li>
+  <li><strong>🤖 AI 导入：</strong>填写类型、分类、数量、目标主题、附加要求，由 DeepSeek 自动生成并去重导入（复用 DeepSeek 问答的 API Key，需联网）</li>
+</ul>
+<h3>学习计划</h3>
+<ul>
+  <li>选择滚动分类（可多选，不选=全部），每次抽取 20 或 50 条</li>
+  <li>卡片显示时长 1 或 5 分钟</li>
+  <li>「启用记忆卡片」开关实时生效，无需点保存</li>
+</ul>
+<h3>悬浮记忆卡片</h3>
+<ul>
+  <li>桌面浮窗，可拖动到任意位置，底部滑条调节透明度</li>
+  <li>单词/短语显示 <strong>🔊 朗读</strong> 按钮（离线发音，只读内容，不读音标释义）</li>
+  <li>✅ 已掌握（从本批移除）、▶ 下一个（切换后重新计时）</li>
+</ul>
+<div class="tip"><strong>朗读说明：</strong>使用系统离线语音（SAPI5），需系统已装语音包，无需联网。</div>
+</section>
+
+<section id="workshop">
+<h2>🛠️ 工具工坊</h2>
+<p>共 28 个工具，左侧导航切换，所有文本输入框粘贴时自动剥除格式。</p>
+<table>
+  <tr><th>工具</th><th>说明</th></tr>
+  <tr><td>📝 临时文本</td><td>随手便签，支持普通/无序列表/有序列表三模式，多级缩进与混编，内容与设置自动持久化</td></tr>
+
+  <tr><td>🤖 DeepSeek 问答</td><td>AI 对话，流式输出 + Markdown 渲染，见下方详解</td></tr>
+  <tr><td>🔐 密码管理器</td><td>密码生成 + 管理 + 导入导出，见下方详解</td></tr>
+  <tr><td>🔤 字符统计</td><td>汉字/英文/数字/标点/行数等详细统计</td></tr>
+  <tr><td>🌐 翻译</td><td>调用 AI API，⇌ 一键互换语言</td></tr>
+  <tr><td>🖼️ 图片转码</td><td>ICO/SVG/PNG 互转，SVG→PNG 支持粘贴代码</td></tr>
+  <tr><td>💻 脚本执行</td><td>历史记录、Tab 补全、快捷命令、交互式 stdin</td></tr>
+  <tr><td>🔍 文件查找</td><td>集成 Everything CLI，❓ 查看配置说明</td></tr>
+  <tr><td>🌐 接口测试</td><td>保存请求历史、Cookie/Token 快捷插入、JSON 格式化</td></tr>
+  <tr><td>其他工具</td><td>临时文本、Emoji 搜索、图片裁缝、百变抽选、时间戳、时区、文本对比、颜色转换、正则（快捷插入/多语言导出）、哈希、QR码、速算、汇率、Base64、URL、JSON（格式化/实体类导出）、进制、大小写、压缩、时间算盘</td></tr>
+</table>
+</section>
+
+<section id="t-deepseek">
+<h2>🤖 DeepSeek 问答</h2>
+<ul>
+  <li>工具栏选择模型：<strong>DeepSeek V3 Flash</strong>（快速）或 <strong>R1 Pro</strong>（深度推理）</li>
+  <li>填写 DeepSeek API Key（sk- 开头）后自动保存，下次无需重填</li>
+  <li>流式输出，支持 Markdown 渲染（标题、粗体、代码块、列表、表格）</li>
+  <li>保留完整对话历史作为上下文，支持多轮连续追问</li>
+  <li><kbd>Enter</kbd> 发送，<kbd>Shift+Enter</kbd> 换行；顶部/底部一键跳转；🗑 一键清空</li>
+</ul>
+<div class="tip"><strong>需要联网：</strong>DeepSeek 问答需要有效的 API Key 和网络连接。</div>
+</section>
+
+<section id="t-pwd">
+<h2>🔐 密码管理器</h2>
+<h3>生成密码</h3>
+<ul>
+  <li>添加多个必须包含的字符串段（➕/➖ 增删），每段可单独保留原始大小写</li>
+  <li>设置总长度、字符类型（大写/小写/数字/特殊符号）</li>
+  <li>三个生成选项：打散插入段 / 保留大小写 / 最终整体乱序</li>
+  <li>实时强度指示（弱/中/强/极强），📋 复制或 💾 保存到管理器</li>
+</ul>
+<h3>保存到管理器</h3>
+<p>一个密码可创建多个独立条目（每条有独立标题/分类/备注/网址），➕ 添加另一个条目，保存时逐条创建，每条均可独立搜索。</p>
+<h3>密码管理列表</h3>
+<ul>
+  <li>左侧分类栏（自定义 emoji 图标），右键重命名/删除（可选释放或级联删除）</li>
+  <li>条目右侧显示关联网址的图标，双行自适应</li>
+  <li>右键菜单：复制密码、去网站使用密码（先复制密码再打开浏览器）、编辑、删除、🔀 派生密码</li>
+  <li>全局去重：密码+URL 组合重复时跳过，跨分类检查</li>
+</ul>
+<h3>派生密码</h3>
+<p>右键 → 🔀 派生密码，以当前密码为基础打开多条目创建弹窗，可新建共用相同密码的多个独立条目。</p>
+<h3>导出 / 导入</h3>
+<table>
+  <tr><th>功能</th><th>说明</th></tr>
+  <tr><td>导出明文</td><td>JSON 格式，不含图标数据，可保存到文件或复制到剪贴板</td></tr>
+  <tr><td>导出加密</td><td>SUOHA: 前缀的加密文本，需在「解密」Tab 或本工具还原</td></tr>
+  <tr><td>导入</td><td>支持文件或剪贴板，明文/加密自动识别，重复条目跳过</td></tr>
+</table>
+<div class="tip"><strong>加密说明：</strong>使用内置固定密钥（XOR+Base64），任何安装了此工具的设备均可解密，不提供端对端保密性，敏感数据请知悉此风险。</div>
+</section>
+
+<section id="t-proc">
+<h2>📋 进程管理器</h2>
+<p>从「一指神功」点击「📋 进程管理器」按钮打开。</p>
+<ul>
+  <li>列出系统所有进程，颜色区分：🟢 用户进程、⚫ 系统进程、🔴 高危进程</li>
+  <li>显示应用图标、PID、进程名、状态、CPU%、内存占用、用户名</li>
+  <li>工具栏三个勾选框可按类型筛选，搜索框过滤进程名/PID/用户</li>
+  <li>5 秒静默刷新（不跳动），对话框关闭后停止采集节省资源</li>
+  <li>右键菜单：复制密码、终止进程（三级警告：高危/系统/用户进程）、复制路径</li>
+</ul>
+<div class="danger"><strong>高危进程：</strong>终止 lsass.exe、csrss.exe 等关键进程必然导致系统蓝屏。</div>
+</section>
+
+<section id="t-char">
+<h2>🔤 字符统计</h2>
+<p>统计字符总数、净字符数、汉字、英文、数字、标点、单词数、行数、空行数，实时更新。</p>
+</section>
+
+<section id="t-translate">
+<h2>🌐 翻译</h2>
+<p>调用设置中配置的 AI API，左右可拖拽调整宽度，⇌ 互换语言，<kbd>Ctrl+Enter</kbd> 触发。</p>
+</section>
+
+<section id="t-timestamp">
+<h2>🕐 时间戳转换</h2>
+<p>时间戳 ↔ 日期时间互转，支持秒级/毫秒级/纳秒级自动识别，📅 日历选择器。</p>
+</section>
+
+<section id="t-timezone">
+<h2>🌍 时区查看</h2>
+<p>实时模式（每秒刷新）或手动模式（拖滑块），支持主流城市时区换算。</p>
+</section>
+
+<section id="t-diff">
+<h2>↔️ 文本对比</h2>
+<p>差异高亮显示（删除红、新增绿），支持重置左/右/全部。</p>
+</section>
+
+<section id="t-color">
+<h2>🎨 颜色转换</h2>
+<p>HEX/RGB/HSL/RGBA 互转，调色板，🎨 系统取色器，🔬 屏幕任意像素取色。</p>
+</section>
+
+<section id="t-img">
+<h2>🖼️ 图片转码</h2>
+<table>
+  <tr><th>模式</th><th>说明</th></tr>
+  <tr><td>ICO 图标</td><td>PNG/JPG/SVG 转多尺寸 ICO</td></tr>
+  <tr><td>SVG 矢量</td><td>位图转 SVG 容器</td></tr>
+  <tr><td>SVG→PNG</td><td>SVG 文件或粘贴代码转 PNG，👁 预览后转换</td></tr>
+</table>
+</section>
+
+<section id="t-api">
+<h2>🌐 接口测试</h2>
+<ul>
+  <li>保存历史请求（带备注标题），下拉框回填所有参数</li>
+  <li>Headers Tab 底部快捷插入 Cookie/Authorization/X-Token</li>
+  <li>响应区：格式化/压缩 JSON，一键复制</li>
+</ul>
+</section>
+
+<section id="t-search">
+<h2>🔍 文件查找</h2>
+<h3>Everything CLI 配置（❓ 按钮有快速说明）</h3>
+<ol>
+  <li>安装 Everything：<code>https://www.voidtools.com/</code> 并保持后台运行</li>
+  <li>下载 es.exe，放入 <code>C:\Windows</code> 或加入 PATH</li>
+  <li>验证：命令提示符输入 <code>es.exe hello</code> 有结果即成功</li>
+</ol>
+</section>
+
+<section id="t-script">
+<h2>💻 脚本执行</h2>
+<ul>
+  <li>↑↓ 历史记录，Tab 补全，⚡ 快捷命令（可管理）</li>
+  <li>进程运行期间出现交互式 stdin 输入框，支持 Y/N 等交互</li>
+  <li>⏹ 终止按钮强制结束当前进程</li>
+</ul>
+</section>
+
+<hr>
+
+<section id="actions">
+<h2>⚡ 一指神功</h2>
+<p>快捷动作中心，单行 6 个按钮，下方显示上次执行时间。</p>
+<table>
+  <tr><th>内置动作</th><th>说明</th></tr>
+  <tr><td>🧹 C盘清理</td><td>专用面板，8 个预设目录 + 自定义，可勾选执行，可中断</td></tr>
+  <tr><td>📋 进程管理器</td><td>弹窗查看所有进程，支持搜索/筛选/终止</td></tr>
+  <tr><td>🚨 查看紧急待办</td><td>快速筛选紧急活跃待办</td></tr>
+</table>
+<p>点击"+"可添加自定义 PowerShell/Python 脚本动作，执行结果实时弹出。</p>
+</section>
+
+<section id="disk-cleanup">
+<h2>🧹 C盘清理</h2>
+<ul>
+  <li>9 个预设清理目录（系统临时/Windows临时/更新缓存/浏览器缓存/回收站等）</li>
+  <li>☑ 勾选框控制哪些目录执行，工具栏全选/取消全选切换</li>
+  <li>▶ 执行勾选：按顺序串行清理，右侧实时日志输出</li>
+  <li>⏹ 中断：随时停止，已完成部分生成 Summary</li>
+  <li>➕ 添加自定义目录（支持 %TEMP% 等环境变量），右键删除</li>
+  <li>左下角显示上次清理时间和释放量，历史 Tab 最多 100 条</li>
+</ul>
+<div class="warn"><strong>注意：</strong>C:\Windows\Temp 需要管理员权限，非管理员运行时会跳过并提示。</div>
+</section>
+
+<section id="todos">
+<h2>✅ 待办管家</h2>
+<h3>四象限</h3>
+<p>重要且紧急 / 重要不紧急 / 紧急不重要 / 不重要不紧急，新建时选择象限。</p>
+<h3>待办功能</h3>
+<ul>
+  <li>双击卡片只读预览，✏️ 编辑（已完成不可编辑），完成时可填写结论</li>
+  <li>多链接（URL+说明，点击跳转+📋 复制）、求助人（多人，📋 复制姓名）</li>
+  <li>图片附件（Ctrl+V 粘贴，Python 内置查看器）</li>
+  <li>截止时间逾期 → 导航栏红圈角标，每分钟刷新</li>
+</ul>
+</section>
+
+<section id="closeloop">
+<h2>🔄 闭环管理</h2>
+<p>用于管理<strong>需要长期跟进、闭环日期暂不确定</strong>的事项——区别于「待办管家」关注的有明确截止时间的任务。适合把一件事的来龙去脉、过程进展串成时间线，便于日后回溯。</p>
+<h3>新建事项</h3>
+<ul>
+  <li>必填：事件名称、开始日期（默认当前时间）、事件背景（长文本）</li>
+  <li>可选关联信息：<strong>链接</strong>（只显示备注、单击跳转、可复制 URL）、<strong>目录位置</strong>（单击打开、可复制绝对路径）、<strong>图片</strong>（Ctrl+V 粘贴、单击预览）、<strong>关联人员</strong>（姓名+工号，可复制、可增删）</li>
+  <li>创建后进入只读预览，点「修改」可再次编辑各项</li>
+</ul>
+<h3>进展时间线</h3>
+<ul>
+  <li>随时「新增进展」：日期、是否里程碑、进展详情，以及与事项相同的四类关联信息</li>
+  <li>历史进展可逐条「展开 / 折叠」，也可「全部展开 / 全部折叠」；折叠时只显示日期 + 摘要（过长自动截断）</li>
+  <li>每条进展可单独修改、删除</li>
+</ul>
+<h3>闭环</h3>
+<p>点「闭环」填写<strong>闭环结论</strong>（默认标记为里程碑），闭环后事项转为只读存档，不能再编辑。</p>
+<h3>分类与回收站</h3>
+<p>事项分为「进行中 / 已闭环 / 回收站」三类管理。删除为软删除，回收站可恢复或彻底删除。</p>
+<h3>回溯导出</h3>
+<ul>
+  <li>勾选：是否包含关联信息 / 是否仅导出里程碑 / 是否包含关联人员</li>
+  <li>选择本地时区与目标时区，导出时自动把整条时间线换算到目标时区</li>
+  <li>生成正式、结构化、无表情符号的纯文本报告，可保存为 .txt 或一键复制到剪贴板</li>
+</ul>
+</section>
+
+<section id="memory">
+<h2>🧠 记忆长廊</h2>
+<ul>
+  <li>剪切板监听开启后，复制的文字 / 图片 / 文件自动归档到记忆长廊</li>
+  <li>左侧日历按天浏览：有记录的日期为彩色加粗，<strong>当前查看的那天用醒目浅蓝底色块高亮</strong></li>
+  <li><strong>Chrome 式滚动跨天</strong>：文本 / 图片 / 文件三个分页都可上下滚动连续翻看相邻日期，左侧日历随之联动定位</li>
+  <li>支持全文搜索；超级剪切板（Ctrl+Shift+V）也可快速检索并上屏</li>
+</ul>
+</section>
+
+<section id="stats">
+<h2>📊 数据看板</h2>
+<p>工具使用频率、待办趋势、象限分布、字数统计，支持按天/周/月切换。</p>
+</section>
+
+<section id="settings">
+<h2>⚙️ 设置</h2>
+<table>
+  <tr><th>配置项</th><th>说明</th></tr>
+  <tr><td>工作空间</td><td>图片、图标缓存存储目录</td></tr>
+  <tr><td>数据库路径</td><td>修改后下次启动生效</td></tr>
+  <tr><td>AI 接入</td><td>翻译等功能的 LLM API 配置</td></tr>
+  <tr><td>超级剪切板</td><td>是否启用 Ctrl+Shift+V 全局唤起，禁用可节省资源</td></tr>
+  <tr><td>数据同步</td><td>每天自动备份数据库到指定路径，支持手动立即同步</td></tr>
+</table>
+</section>
+
+<section id="sticky">
+<h2>📌 悬浮便签</h2>
+<p>托盘右键 → 便签浮窗，始终置顶，显示当天紧急待办，位置自动记忆，关闭主窗口后仍显示。</p>
+</section>
+
+<section id="clipboard">
+<h2>📋 超级剪切板管理器</h2>
+<div class="tip"><strong>启用条件：</strong>设置中「超级剪切板」开关打开（默认开启），需安装 <code>keyboard</code> 库。</div>
+<h3>唤起</h3>
+<p>在任意位置按 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> 唤出选择器，再按一次隐藏。整合系统剪切板历史 + 记忆长廊，按时间倒序显示最近 N 条（条数可在设置中调整）。</p>
+<h3>内容标识（可叠加）</h3>
+<table>
+  <tr><th>标识</th><th>含义</th></tr>
+  <tr><td>📌</td><td>已固定的记录</td></tr>
+  <tr><td>📋</td><td>在本次运行的剪切板历史中</td></tr>
+  <tr><td>🧠</td><td>在记忆长廊中</td></tr>
+  <tr><td>📌📋🧠</td><td>三种来源可同时叠加显示</td></tr>
+</table>
+<p>选择器分为<strong>文字 / 图片 / 文件</strong>三个 Tab，用 <kbd>←</kbd> <kbd>→</kbd> 切换。</p>
+<h3>固定与分组</h3>
+<ul>
+  <li>右键文字记录 → <strong>📌 固定到分组</strong>，固定内容永久保留；可在设置「管理固定分组」中增删改分组。</li>
+  <li>底部勾选 <strong>「只显示固定」</strong>：先按分组浏览，<kbd>Tab</kbd> / 单击进入分组查看其固定记录，<kbd>Esc</kbd> / <kbd>←</kbd> / 后退按钮返回分组。</li>
+  <li>分组内固定记录：<kbd>Enter</kbd> 原格式上屏、<kbd>Tab</kbd> 纯文本上屏；右键可<strong>取消固定 / 移动到其它分组 / 粘贴为 .txt</strong>。</li>
+  <li>设置中可开启<strong>「固定记录置顶」</strong>，固定记录按分组分段显示在最前。</li>
+</ul>
+<h3>键盘操作</h3>
+<table>
+  <tr><th>按键</th><th>效果</th></tr>
+  <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>上下选择条目（自动跳过分组标题）</td></tr>
+  <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>切换文字 / 图片 / 文件 Tab</td></tr>
+  <tr><td>直接输入</td><td>实时搜索，关键字高亮，输入防抖，大数据量下也能即时出结果</td></tr>
+  <tr><td><kbd>Enter</kbd> / 左键</td><td>（文字/图片）带格式上屏，自动粘贴</td></tr>
+  <tr><td><kbd>Tab</kbd></td><td>（文字）纯文本上屏</td></tr>
+  <tr><td>右键</td><td>菜单选择粘贴方式 / 固定 / 移动分组</td></tr>
+  <tr><td><kbd>Esc</kbd></td><td>关闭选择器（在分组内则返回分组列表）</td></tr>
+</table>
+<div class="tip"><strong>弹窗下可用：</strong>其它工具弹出对话框时，选择器仍可正常用上下键、Enter、Tab 操作。</div>
+<h3>文件 Tab</h3>
+<p>显示剪切板复制的文件 + 记忆长廊记录的文件，支持多种粘贴方式：</p>
+<table>
+  <tr><th>按键</th><th>粘贴内容</th></tr>
+  <tr><td><kbd>Enter</kbd></td><td>文件本身</td></tr>
+  <tr><td><kbd>Tab</kbd></td><td>文件名（无后缀）</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></td><td>文件名（带后缀）</td></tr>
+  <tr><td><kbd>Shift</kbd>+<kbd>Enter</kbd></td><td>绝对路径（Windows，反斜杠）</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td><td>绝对路径（Linux，正斜杠）</td></tr>
+</table>
+<p>右键菜单同样列出以上全部选项并标注对应快捷键，另含「打开文件 / 打开所在位置」。设置中可选择是否显示<strong>已失效文件</strong>（目标已不存在）。</p>
+<h3>图片 Tab</h3>
+<p>剪切板图片 + 记忆长廊图片，缩略图预览，Enter 上屏。</p>
+</section>
+
+<section id="aggregate">
+<h2>🔍 聚合搜索</h2>
+<p>双击 <kbd>Ctrl</kbd> 唤起一个统一搜索框，一处搜<strong>书签、应用、文件、工具</strong>等。系统应用（计算器 / 控制面板 / 画图 / 截图 / 设置 / 终端…）会显示对应的真实图标。<kbd>↑</kbd><kbd>↓</kbd> 选择、<kbd>Enter</kbd> 打开、<kbd>Esc</kbd> 关闭。</p>
+</section>
+
+<section id="datasync">
+<h2>数据同步</h2>
+<p>在设置页面「数据同步」区域：</p>
+<ul>
+  <li>填写备份目标路径（如 <code>D:/Backup/suoha.db</code>），点击 📂 浏览选择</li>
+  <li>勾选「每天自动同步」，程序启动时检查，每天最多同步一次</li>
+  <li>点击「🔄 立即同步」手动触发，状态栏显示结果</li>
+  <li>每次同步会在目标目录额外保留一份带时间戳的历史快照</li>
+</ul>
+</section>
+
+<section id="build">
+<h2>打包说明</h2>
+<p>Windows 下运行 <code>build.bat</code> 即可打包，输出到 <code>dist/梭哈工具台.exe</code>。</p>
+<div class="tip"><strong>帮助文档：</strong>help.html 打包进 exe，点击 ❓ 用浏览器打开，无需网络。</div>
+</section>
+
+<section id="context-menu">
+<h2>右键菜单</h2>
+<p>以管理员身份运行 <code>install_context_menu.bat</code> 注册「创建待办事项」右键菜单；<code>uninstall_context_menu.bat</code> 卸载。</p>
+<table>
+  <tr><th>配置项</th><th>当前值</th></tr>
+  <tr><td>程序路径</td><td><code>D:\Tools\梭哈工具台.exe</code></td></tr>
+  <tr><td>图标</td><td><code>D:\UserDir\Projects\SuohaData\custom_icon.ico</code></td></tr>
+  <tr><td>显示名称</td><td>创建待办事项</td></tr>
+</table>
+</section>
+
+<section id="faq">
+<h2>常见问题</h2>
+<h3>Ctrl+Shift+V 没反应？</h3>
+<p>确认设置中「超级剪切板」已启用，且已安装 <code>keyboard</code> 库（<code>pip install keyboard</code>）。若热键被其他程序占用，可在设置中禁用后重启。</p>
+<h3>Ctrl+Shift+V 后输出了字符 v？</h3>
+<p>更新到最新版（已改用 Windows RegisterHotKey API，无按键泄漏）。</p>
+<h3>DeepSeek 问答提示需要 API Key？</h3>
+<p>在工具栏的 Key 输入框填入 DeepSeek API Key（sk- 开头），会自动保存。该功能需要联网。</p>
+<h3>记忆卡片朗读没声音？</h3>
+<p>朗读使用系统离线语音（SAPI5），确认系统已安装语音包。语速默认已调慢。</p>
+<h3>记忆大师 AI 导入失败？</h3>
+<p>AI 导入复用 DeepSeek 的 API Key，需先在 DeepSeek 问答中填写，且需要联网。</p>
+<h3>密码管理器搜不到某个条目？</h3>
+<p>每个条目是独立记录，确认标题或网址已填写。密码相同但 URL 不同的条目是独立可搜索的。</p>
+<h3>C盘清理提示无权限？</h3>
+<p>C:\Windows\Temp 需要管理员权限，以管理员身份运行工具台即可。</p>
+<h3>进程管理器显示权限不足？</h3>
+<p>系统进程需要管理员权限才能终止，以管理员身份运行后可操作。</p>
+<h3>数据迁移？</h3>
+<p>复制 .db 文件到新位置，在设置页面修改「数据库路径」后重启即可。</p>
+</section>
+
+<hr>
+<p style="color:var(--text3);font-size:12px;text-align:center;padding-bottom:20px">
+梭哈工具台 · 本地效率工具箱 · Python 3.13 + PySide6
+</p>
+</main>
+<script>
+const links=document.querySelectorAll('.sidebar a[href^="#"]');
+const secs=document.querySelectorAll('section[id]');
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=document.querySelector(`.sidebar a[href="#${x.target.id}"]`);if(a){a.classList.add('active');a.scrollIntoView({block:'nearest',behavior:'instant'})}}}); },{threshold:.15,rootMargin:'-60px 0px -50% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>document.querySelector('.sidebar').classList.remove('open')));
+document.addEventListener('click',e=>{const sb=document.querySelector('.sidebar');if(sb.classList.contains('open')&&!sb.contains(e.target)&&!e.target.closest('.menu-btn'))sb.classList.remove('open');});
+function _setThemeUI(t){const b=document.getElementById('themeBtn');if(t==='light'){document.documentElement.setAttribute('data-theme','light');b.textContent='☀️ 亮色';}else{document.documentElement.removeAttribute('data-theme');b.textContent='🌙 暗色';}}
+function _readPref(){try{const m=document.cookie.match(/(?:^|; )helpTheme=([^;]+)/);return m?m[1]:'';}catch(e){return '';}}
+function toggleTheme(){const cur=document.documentElement.getAttribute('data-theme')==='light'?'light':'dark';const next=cur==='light'?'dark':'light';_setThemeUI(next);try{document.cookie='helpTheme='+next+';path=/;max-age=31536000';}catch(e){}}
+(function(){let p=_readPref();if(!p){p=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}_setThemeUI(p);})();
+</script>
+</body>
+</html>
