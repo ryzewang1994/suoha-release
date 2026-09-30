@@ -1,11 +1,11 @@
 {
-    "version":  "3.0.11",
-    "notes":  "### 新功能\n\n- 设置 · 数据里新增「导出配置 / 导入配置」：可以把网址导航（整个分类或挑具体网址）、记忆大师知识库（按分类）、AI 接入配置（可选带不带 API Key）导出成一个文件，换电脑或分享给别人时导入。导入是合并，已有的内容会跳过，不会覆盖。\n- 检查更新多了备用地址：主地址连不上时会自动换备用地址继续检查，不用一直干等。\n\n### 改动\n\n- 网址导航的搜索引擎选择框，每个引擎前面都带上了图标，挑的时候一眼就能分清；没有图标的引擎显示首字母色块。\n- 设置 · 关于里的「发布渠道」显示这个版本实际去哪里检查更新。",
-    "pub_date":  "2026-09-30T20:14:33Z",
+    "version":  "3.0.12",
+    "notes":  "### 新功能\n\n- 临时文本右上角新增三个按钮：「在记事本中编辑」把当前内容存成文件用记事本打开；「在悬浮窗中编辑」打开一个置顶的小窗接着写，透明度可以实时调，能拖到副屏，普通模式和列表模式的操作和工具里一样，点保存存到工作区；「历史」可以查看、载入、删除保存过的记录。\n- 时区查看可以开一个桌面时钟浮窗：当前城市加粗显示在最上面，其他城市依次往下；底部的时间条可以拖动看其他时刻各地是几点（5 分钟一格），一键回到现在；置顶、透明度可调、能拖到副屏。\n- 浏览器扩展能识别新密码：在网页上登录时，如果这个网站的密码还没存进工具台，页面右上角会问一句，点「存入」就按网站的主域名存进密码管理器，账号等信息之后再补。更新工具台后，请在浏览器的扩展管理页里把扩展「重新加载」一下。\n- 浏览器扩展换了和工具台一致的新图标。\n\n### 改动\n\n- 汇率转换同时从多个汇率源获取，一个连不上会自动用别的，界面上会标出这次用的是哪个源。\n- 临时文本插入的纯文本表格，贴到记事本、微信等地方竖线能对齐了；插入表格时可以选择按哪种字体对齐，编辑框里看到的就是贴过去的样子。\n- 时区查看拖动时间改为 5 分钟一格。\n- 快速粘贴密码：存的是主域名（如 example.com）时，在它的子域名登录页上也能粘出来。\n- 工具改名：图片裁缝改为「图片裁切」，速算改为「快速计算」，时间算盘改为「时间换算」。",
+    "pub_date":  "2026-09-30T23:12:39Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUQxeXBNbzh1WkpwWjN0Q1d6Q3RxM3BwQ3VwTFZQaDRocmRKOHpOcnJjMEhnWWsxUzhLN0YwcFFzWVNPRXFNTDIwQVozNGR2aUNaWXhlSzVJVjdWSkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNzk5MjcyCWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xMV94NjQtc2V0dXAuZXhlCk5SdkJBNU80ZjEzcmM2U1RoM0hqNUgyWFRBNlJwOUhiOFNhTGVjUDNxSUd2YWRtdHRpU0lTUElJcnQ0bnB5VXBXeWRqbis5RUZsQ1JyUG1OZ2dKR0NnPT0K",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.11/suoha-workbench_3.0.11_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOU5PV0toQ0h6NHJEN0JEUTdMNjk2V0d1cHNnT2FCTmpQb0JlNUk3YXlIeDQ1Y0x5Ukd2Q1UvVzhIUU5jQ2FYaHFwbm5jTWJKVjVsd3dIcDloMlRwSEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODA5OTU5CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xMl94NjQtc2V0dXAuZXhlCmVxTGpRcmROWWY0cmZicmQxRkJTUXJqRlE5SzJWbGdEYUtaTzFwbWdWdGxEa2Q0TEdHMDJCUkF5SVJBbnZVaGRYNmIzc1doL05zMWwzenBKekhxS0JRPT0K",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.12/suoha-workbench_3.0.12_x64-setup.exe"
                                          }
                   }
 }
