@@ -1,0 +1,11 @@
+{
+    "version":  "3.0.11",
+    "notes":  "### 新功能\n\n- 设置 · 数据里新增「导出配置 / 导入配置」：可以把网址导航（整个分类或挑具体网址）、记忆大师知识库（按分类）、AI 接入配置（可选带不带 API Key）导出成一个文件，换电脑或分享给别人时导入。导入是合并，已有的内容会跳过，不会覆盖。\n- 检查更新多了备用地址：主地址连不上时会自动换备用地址继续检查，不用一直干等。\n\n### 改动\n\n- 网址导航的搜索引擎选择框，每个引擎前面都带上了图标，挑的时候一眼就能分清；没有图标的引擎显示首字母色块。\n- 设置 · 关于里的「发布渠道」显示这个版本实际去哪里检查更新。",
+    "pub_date":  "2026-09-30T20:14:33Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUQxeXBNbzh1WkpwWjN0Q1d6Q3RxM3BwQ3VwTFZQaDRocmRKOHpOcnJjMEhnWWsxUzhLN0YwcFFzWVNPRXFNTDIwQVozNGR2aUNaWXhlSzVJVjdWSkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNzk5MjcyCWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xMV94NjQtc2V0dXAuZXhlCk5SdkJBNU80ZjEzcmM2U1RoM0hqNUgyWFRBNlJwOUhiOFNhTGVjUDNxSUd2YWRtdHRpU0lTUElJcnQ0bnB5VXBXeWRqbis5RUZsQ1JyUG1OZ2dKR0NnPT0K",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.11/suoha-workbench_3.0.11_x64-setup.exe"
+                                         }
+                  }
+}
