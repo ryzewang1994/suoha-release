@@ -1,10 +1,10 @@
 {
     "version":  "3.0.14",
     "notes":  "### 新功能\n\n- 时区查看能选的城市补全了，覆盖所有国家和地区（比如多米尼加），可以按城市名、国家名或时区搜索。\n- 城市名、国家名跟着界面语言显示（中文、English、Español）。\n- 列表上会标出各地此刻是夏令时还是冬令时，时间按各地的规则自动换算。\n- 可以自定义城市：自己填国家、城市并选时区；内置城市的显示名也可以改。\n- 城市可以拖动排序，时钟浮窗跟着同样的顺序显示。\n- 时钟浮窗新增「浮窗样式」：可选显示城市名、国家名或「国家 + 城市」；方块可以调字号和行间距，横条可以调字号和高度。",
-    "pub_date":  "2026-10-01T19:09:44Z",
+    "pub_date":  "2026-10-01T22:23:14Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOU8wMStKbXQ2NVdad3ROSm0vcXRya2RYMDg3aHB5YXMzUit3dGNjVXNJNldaTTE0RnNRNjFRbGd0SEZIZzZzSkZtSWhudTJXa01IQ01HOVZZbmV2WFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODgxNzgzCWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xNF94NjQtc2V0dXAuZXhlCndsSzFwMXlabkFNNldlMFpBZVFZcFQ5MkRBSFl2NjlrQUFRRm1adk1hdmQybmZqb3U2VUZLK20rcDZIbXdSNTE2SUw4V3pjdmpLZWFuTmZtRmNVUkJ3PT0K",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUhtcEFnbTRLTnE3NVEvenZtTHRqSTdlaUZsODZWQVJMOW5VSkJyamRUa2NNTkxVUGxaYW1XU0JIVExqR0dKR25EemNPWlRTZ0JuSm9jeXh5c1gxNFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODkzMzk0CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xNF94NjQtc2V0dXAuZXhlCnlndndOdStpMlJyVityUlE1bGpaaFZ1cGZ3LzVHVVp0RFBDRm5ES1UyWjd5V2xURTZpL0JncUxXdGkzVTNIUzdvbXNPOUZraStOSXI4NE1vZDJDUENRPT0K",
                                              "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.14/suoha-workbench_3.0.14_x64-setup.exe"
                                          }
                   }
