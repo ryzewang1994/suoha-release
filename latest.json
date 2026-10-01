@@ -1,11 +1,11 @@
 {
-    "version":  "3.0.13",
-    "notes":  "### 新功能\n\n- 有新版本时更醒目了：第一次发现会弹窗，可以选「立即更新」「暂不更新」或「忽略此次更新」。选暂不更新的话，窗口顶部会一直挂着一条提醒，点一下就开始升级；忽略的版本不再提醒。\n- 时钟浮窗新增「横条」样式：横跨整个屏幕的一条，可以贴在屏幕顶部或任务栏上方，拖到副屏会自动铺满副屏。各城市排成一行，和本地同一天的正常显示，已经到第二天的显示蓝色，还在前一天的显示红色。\n- 临时文本新增「存到文件」按钮（快捷键 Ctrl+Shift+S），存下的内容在「历史」里能看到。\n\n### 改动\n\n- 临时文本列表模式下回车补出序号后，输入框会自动滚到光标所在的位置。\n- 临时文本浮窗、时钟浮窗等桌面浮窗会跟着工具台实时切换深色 / 浅色主题。\n- 浮窗透明度调得很低时，文字会加上描边，放在什么背景上都看得清。",
-    "pub_date":  "2026-10-01T16:13:19Z",
+    "version":  "3.0.14",
+    "notes":  "### 新功能\n\n- 时区查看能选的城市补全了，覆盖所有国家和地区（比如多米尼加），可以按城市名、国家名或时区搜索。\n- 城市名、国家名跟着界面语言显示（中文、English、Español）。\n- 列表上会标出各地此刻是夏令时还是冬令时，时间按各地的规则自动换算。\n- 可以自定义城市：自己填国家、城市并选时区；内置城市的显示名也可以改。\n- 城市可以拖动排序，时钟浮窗跟着同样的顺序显示。\n- 时钟浮窗新增「浮窗样式」：可选显示城市名、国家名或「国家 + 城市」；方块可以调字号和行间距，横条可以调字号和高度。",
+    "pub_date":  "2026-10-01T19:09:44Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUZBUDdDQWZrbi85b3k3eDF0S20zVEdNa0EvVGNiRzFDN0E0R1ZsWGoyQXpsZTZRaXk1RUJUV0ZVYXROZ2o1ZFVJVUJHQnlCVnFWVDRGSnZSSW9ub1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODcxMTk5CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xM194NjQtc2V0dXAuZXhlCmEraXBoRXpudDU3SlA1bklQaE8zYlV0YlJJU0dQMlNXd1dVZVcyZmZZa3ducVI3azZ2RXNsaFJKYm5sdER1TGlqcGFzT2FYTm5oNlZudERXaURPcURRPT0K",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.13/suoha-workbench_3.0.13_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOU8wMStKbXQ2NVdad3ROSm0vcXRya2RYMDg3aHB5YXMzUit3dGNjVXNJNldaTTE0RnNRNjFRbGd0SEZIZzZzSkZtSWhudTJXa01IQ01HOVZZbmV2WFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODgxNzgzCWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xNF94NjQtc2V0dXAuZXhlCndsSzFwMXlabkFNNldlMFpBZVFZcFQ5MkRBSFl2NjlrQUFRRm1adk1hdmQybmZqb3U2VUZLK20rcDZIbXdSNTE2SUw4V3pjdmpLZWFuTmZtRmNVUkJ3PT0K",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.14/suoha-workbench_3.0.14_x64-setup.exe"
                                          }
                   }
 }
