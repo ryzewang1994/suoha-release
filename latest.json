@@ -1,11 +1,11 @@
 {
-    "version":  "3.1.0",
-    "notes":  "### 新功能\n\n- 工具工坊新增「📊 图表绘制」：粘贴 Excel / CSV / Markdown 表格，画柱状图、折线图、面积图、散点图、饼图、环形图，可以组合成双坐标轴的组合图。颜色、线型、粗细、数据点、数据标注、平滑曲线、圆角、渐变都能调；可以加趋势线、平均线、方差线、移动平均线（自动计算）和自己设定数值的基准线；标题、图例、坐标轴名称、网格、配色方案、尺寸都可以自定义。做好的图可以一键复制成图片，或者存成 PNG / SVG。\n\n### 优化\n\n- 程序在后台闲置时更省电、更安静：去掉了一处每秒近百次的无谓唤醒。\n- 内存占用更低：各个悬浮窗只加载自己需要的部分；记忆长廊翻看大量图片时内存不再一直上涨。\n- 安装包更干净：只包含程序真正需要的文件。\n- 设置页整理：「工作空间目录」移到「数据」分类，和数据库放在一起；下拉框和数字框的宽度更合适；文件索引的说明更清楚。\n\n### 修复\n\n- 修复设置页数据库「文件大小」有时显示为 NaNGB 的问题。",
-    "pub_date":  "2026-10-03T05:19:38Z",
+    "version":  "3.1.1",
+    "notes":  "### 新功能\n\n- 工具工坊新增「✉️ 邮件设计」：专门做周报、月报这类周期性邮件，告别从 Excel 粘进 Outlook 格式乱掉的问题。\n- 版式自由搭：标题、富文本正文、分栏、指标卡、数据表、图表、趋势图、图片、按钮链接、跳转目录、分隔线、签名，每一块的字体、颜色、间距、底色都能调。\n- 数据直接从 Excel 粘贴，一份模板可以放多份数据；正文任何位置都能插入计算结果（合计、平均、计数、环比、排名等近 60 个函数），还可以把常用算法做成自己的函数。\n- 周期性邮件：日报 / 周报 / 月报 / 年报，每期数据可以存下来（最多 30 期），自动和上期对比、画出趋势图；换周期时「周报」「月报」等字样自动跟着变。\n- 一键在 Outlook 中打开草稿（支持 Outlook 2007 及以上，RTF / HTML 可选，自动识别本机版本），也可以导出 .eml、复制富文本或导出 HTML，给其他邮箱客户端用。\n- 多语言：用已接入的 AI 一键翻译成多种语言，可以合并在一封里，也可以每种语言单独一封。\n- 收件人、抄送、密送和通讯录；模板自动保存，也可以导出给同事直接导入使用。\n- 预览可以弹出成单独的窗口放到副屏，一个屏设计一个屏看；也可以进入专注模式全屏设计。\n\n### 修复\n\n- 图表绘制：支持横着排的数据（比如一行是每周销售额、往右是第 1 周、第 2 周……），可以自动识别，也可以手动选择按行或按列取数据，或一键转置。",
+    "pub_date":  "2026-10-03T21:09:27Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUNobXJFVENvTTF1VkpkQm9HNGNnbUJ4K1NGeFVKQWJDMUVpelZXL0d1d2dxTmRjSEk2WGFRbTNxRmgrMkQ1a0lnU1NPVHBoOTgrMWdBOEpMazZaR3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMDA0Nzc4CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4wX3g2NC1zZXR1cC5leGUKSUZKUDFidzk4a3lTNCtNVmVCS0E4c0tFMFNOYkFtRVMvWUplZXFQaEFiR2N4R01LMzh1dGF4Wml2UW9yTGUrMnhQVnVMNFNweDl4bS9Oa2ZIMDk2QWc9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.0/suoha-workbench_3.1.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOVBxRVBIenJwL3ZUY2FyRVEzZlZpd3ZHdThwbFlHcStZOW4wMnIwRjNZclo2Nm1pZ2dRZnB0Wk5Vc1pDK09pTTREUVVOUHpRN3gzMGgwYWxzYjhTakFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMDYxNzY3CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4xX3g2NC1zZXR1cC5leGUKR052ME5MZjNyUHpITXh1aTh5UVc1QlM2OC9xMWJ0Y21SaCsvWEpuZU5qKzY0VXVWWkx4ekVQbHFxQXFnNHFHNSsxSjlGSUVXVUhuekZ1bGZsMUJLQUE9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.1/suoha-workbench_3.1.1_x64-setup.exe"
                                          }
                   }
 }
