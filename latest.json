@@ -1,11 +1,11 @@
 {
-    "version":  "3.0.14",
-    "notes":  "### 新功能\n\n- 时区查看能选的城市补全了，覆盖所有国家和地区（比如多米尼加），可以按城市名、国家名或时区搜索。\n- 城市名、国家名跟着界面语言显示（中文、English、Español）。\n- 列表上会标出各地此刻是夏令时还是冬令时，时间按各地的规则自动换算。\n- 可以自定义城市：自己填国家、城市并选时区；内置城市的显示名也可以改。\n- 城市可以拖动排序，时钟浮窗跟着同样的顺序显示。\n- 时钟浮窗新增「浮窗样式」：可选显示城市名、国家名或「国家 + 城市」；方块可以调字号和行间距，横条可以调字号和高度。",
-    "pub_date":  "2026-10-01T22:23:14Z",
+    "version":  "3.0.15",
+    "notes":  "### 新功能\n\n- 时钟浮窗、记忆卡片、待办便签默认不挡鼠标：点上去等于点它下面的东西，按住 Alt 时才能拖动、点按钮、滚轮操作（按住 Alt 时浮窗会亮一圈边框）。不需要的话可以在「设置 → 外观」里关掉。\n- 时钟浮窗：滚动鼠标滚轮调时间（5 分钟一格，横条样式也能用），Ctrl+滚轮调透明度，Esc / Backspace / Delete 关闭。\n- 记忆卡片用 Ctrl+滚轮调透明度；临时文本浮窗把鼠标停在顶部那条上 Ctrl+滚轮调透明度。\n- 临时文本插入表格时，Tab 跳到下一列、Enter 跳到下一行（和 Excel 一样）；可以直接粘贴从 Excel、CSV、Markdown 复制来的表格，放不下时会提示选择截断还是重新复制。\n- 临时文本的操作按钮单独放到第二行。\n\n### 修复\n\n- 修复浮窗有时不再置顶、或者莫名其妙不显示的问题。\n- 修复聚合搜索选中工具后按 Enter 只打开工具台、没有进入那个工具的问题。\n- 修复时区查看拖动排序拖不动的问题。",
+    "pub_date":  "2026-10-03T02:01:49Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUhtcEFnbTRLTnE3NVEvenZtTHRqSTdlaUZsODZWQVJMOW5VSkJyamRUa2NNTkxVUGxaYW1XU0JIVExqR0dKR25EemNPWlRTZ0JuSm9jeXh5c1gxNFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODkzMzk0CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xNF94NjQtc2V0dXAuZXhlCnlndndOdStpMlJyVityUlE1bGpaaFZ1cGZ3LzVHVVp0RFBDRm5ES1UyWjd5V2xURTZpL0JncUxXdGkzVTNIUzdvbXNPOUZraStOSXI4NE1vZDJDUENRPT0K",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.14/suoha-workbench_3.0.14_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUZmWDlUbVBrQTJWNDY0QnZHZDA1dDJGVmJxaUZBU1crUW5EbFplYmhnTmQ3bC9DMXlqeXhxM3UzbjJDb0JHMW5vN2JkSndqT1c3RWlyWkRlbUtseVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTkyOTA4CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMC4xNV94NjQtc2V0dXAuZXhlCm9RZTVpWWVzOFNlcnlQdmFESUVSVUVYZHpqR0NLa21aS2wyZ2VyUkNMYUhERmVZTm1jVnI2ZE43d2h2SjlkMWVIbWdUWTN1SFk0TzU5WnlET2xKM0N3PT0K",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.0.15/suoha-workbench_3.0.15_x64-setup.exe"
                                          }
                   }
 }
