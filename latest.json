@@ -1,10 +1,10 @@
 {
     "version":  "3.1.2",
-    "notes":  "### 新功能\n\n- 浮窗配色自动适应背景：时钟、记忆卡片、便签、快速待办、搜索框、剪贴板等浮窗会根据背后的明暗自动换成深色或浅色配色，放在深色网页或浅色背景上都看得清。可以在「设置 → 常规 → 外观」里关掉，关掉后跟随主题。\n- 邮件设计新增「版面」选项：「原生邮件」（默认）和在 Outlook 里直接写的邮件一样铺满窗口、靠左对齐；也可以选回「卡片居中」的新闻稿样式。\n\n### 修复\n\n- 邮件设计在 Outlook 中打开草稿后显示成窄窄一页、像阅读模式的问题。",
-    "pub_date":  "2026-10-05T16:17:22Z",
+    "notes":  "### 新功能\n\n- 浮窗配色自动适应背景：时钟、记忆卡片、便签、快速待办、搜索框、剪贴板等浮窗会根据背后的明暗自动换成深色或浅色配色，放在深色网页或浅色背景上都看得清。可以在「设置 → 常规 → 外观」里关掉，关掉后跟随主题。\n- 邮件设计新增「版面」选项：「原生邮件」（默认）和在 Outlook 里直接写的邮件一样铺满窗口、靠左对齐；也可以选回「卡片居中」的新闻稿样式。\n\n### 修复\n\n- 邮件设计在 Outlook 中打开草稿后显示成窄窄一页、像阅读模式的问题。\n- 时钟浮窗贴着任务栏放时，配色被深色任务栏带成深色、在浅色页面上看不清的问题。",
+    "pub_date":  "2026-10-05T17:22:45Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUFVUGRacnhHamdLQjdQU2Vxb2gyeEcvM1dNMm9SMHZsTzFidVAxTnNlL01ucGI2TEQwbTRPenZURUp3L2huUXlvVE9vWit0Nk9mQVJNWXpEWVp0bkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjE3MDQyCWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4yX3g2NC1zZXR1cC5leGUKSlRmWUlPNTBpYytwUjE1ODkwSHEwdkVkS0tBS2owcUowem4vR0ZZSmdpUXhxQnRqNzVBRHUzL3U4V2lWZFN0WlBLWXBzRlJBTVZmNUxKeDhEbGFqQ2c9PQo=",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUdNMDlocHQwZVlwaFRiR3dVS3JSM3ZkWk1OZXFHUS9CVUFXemlTM0JNU3d2OEwrQXhtNzZJUEFvTG13amFldDVwRXQyNFlObjBEaTdTQ0h6NDFUUEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjIwOTY0CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4yX3g2NC1zZXR1cC5leGUKY1ZId0lZcG5TSE5RVnBORmJ6NTFFemsvbWN3cUJNeU5xZVFOYnUzOTB0SGNHcWxNQml2bEF3cDNDb0VIZ1Bpek9RSGJPNmU1aGdaRXRzM2hXUVFvQ3c9PQo=",
                                              "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.2/suoha-workbench_3.1.2_x64-setup.exe"
                                          }
                   }
