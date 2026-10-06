@@ -1,11 +1,11 @@
 {
-    "version":  "3.1.2",
-    "notes":  "### 新功能\n\n- 浮窗配色自动适应背景：时钟、记忆卡片、便签、快速待办、搜索框、剪贴板等浮窗会根据背后的明暗自动换成深色或浅色配色，放在深色网页或浅色背景上都看得清。可以在「设置 → 常规 → 外观」里关掉，关掉后跟随主题。\n- 邮件设计新增「版面」选项：「原生邮件」（默认）和在 Outlook 里直接写的邮件一样铺满窗口、靠左对齐；也可以选回「卡片居中」的新闻稿样式。\n\n### 修复\n\n- 邮件设计在 Outlook 中打开草稿后显示成窄窄一页、像阅读模式的问题。\n- 时钟浮窗贴着任务栏放时，配色被深色任务栏带成深色、在浅色页面上看不清的问题。",
-    "pub_date":  "2026-10-05T17:22:45Z",
+    "version":  "3.1.3",
+    "notes":  "### 新功能\n\n- 超级剪贴板能收纳 Excel 表格、网页、Word 这类带格式的复制，列表里标「表格」或「带格式」。按 Enter 原样粘贴，粘回 Excel 还是表格、粘到 Word 或邮件里保留字体颜色；按 Tab 只粘纯文本；按 Shift+Enter 粘贴成文件（表格存成 Excel 能直接打开的 .csv，其余存 .txt）。\n- 超级剪贴板的文字记录显示不全时，鼠标停在上面（或用方向键停在上面）一会儿会浮出完整预览，表格按表格显示。\n\n### 修复\n\n- 从 Excel 复制单元格被当成截图收进图片里的问题。\n- 复制单个字（一个符号、一个数字、一个汉字）不进超级剪贴板的问题。\n- 重复复制的内容、最后一次粘贴的内容，下次打开超级剪贴板时排在最上面。\n- 超级剪贴板文件标签里显示的是文件所在的文件夹、而不是文件本身的问题。\n- 超级剪贴板选中行左侧多出一条圆角竖条，已去掉。\n- 多个浮窗同时显示时，配色被统一成一种的问题：现在各自按自己背后的明暗调整。",
+    "pub_date":  "2026-10-06T19:15:48Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUdNMDlocHQwZVlwaFRiR3dVS3JSM3ZkWk1OZXFHUS9CVUFXemlTM0JNU3d2OEwrQXhtNzZJUEFvTG13amFldDVwRXQyNFlObjBEaTdTQ0h6NDFUUEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjIwOTY0CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4yX3g2NC1zZXR1cC5leGUKY1ZId0lZcG5TSE5RVnBORmJ6NTFFemsvbWN3cUJNeU5xZVFOYnUzOTB0SGNHcWxNQml2bEF3cDNDb0VIZ1Bpek9RSGJPNmU1aGdaRXRzM2hXUVFvQ3c9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.2/suoha-workbench_3.1.2_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUZsbmdISmVaa0ZHRjQvcmluMlpSSm95eVFvM1RlZXlxWHpOU3l3TW1PV1FuUWN5ekJ6Q0tOcFVYQXFRVVJaWjV2OHlEeFJLMWV4TkorcDNyci9obEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzE0MTQ4CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4zX3g2NC1zZXR1cC5leGUKL1l5U1RCVDd3MGIybGxiNm1WYk5WYTkxTHBsSFdObzdhMHpMVXdnZlhTV3A0ZTg1NjdKK2tSQUoycGs1Z0w5VVlqdy9MTWdsS1ZCRDV2UWpNVzJ0Qmc9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.3/suoha-workbench_3.1.3_x64-setup.exe"
                                          }
                   }
 }
