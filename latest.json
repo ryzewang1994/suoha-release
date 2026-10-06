@@ -1,11 +1,11 @@
 {
-    "version":  "3.1.3",
-    "notes":  "### 新功能\n\n- 超级剪贴板能收纳 Excel 表格、网页、Word 这类带格式的复制，列表里标「表格」或「带格式」。按 Enter 原样粘贴，粘回 Excel 还是表格、粘到 Word 或邮件里保留字体颜色；按 Tab 只粘纯文本；按 Shift+Enter 粘贴成文件（表格存成 Excel 能直接打开的 .csv，其余存 .txt）。\n- 超级剪贴板的文字记录显示不全时，鼠标停在上面（或用方向键停在上面）一会儿会浮出完整预览，表格按表格显示。\n\n### 修复\n\n- 从 Excel 复制单元格被当成截图收进图片里的问题。\n- 复制单个字（一个符号、一个数字、一个汉字）不进超级剪贴板的问题。\n- 重复复制的内容、最后一次粘贴的内容，下次打开超级剪贴板时排在最上面。\n- 超级剪贴板文件标签里显示的是文件所在的文件夹、而不是文件本身的问题。\n- 超级剪贴板选中行左侧多出一条圆角竖条，已去掉。\n- 多个浮窗同时显示时，配色被统一成一种的问题：现在各自按自己背后的明暗调整。",
-    "pub_date":  "2026-10-06T19:15:48Z",
+    "version":  "3.1.4",
+    "notes":  "### 修复\n\n- 修复 3.1.3 启动后界面卡死、没有响应的问题（3.1.3 的其余新功能都保留）。",
+    "pub_date":  "2026-10-06T20:12:17Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUZsbmdISmVaa0ZHRjQvcmluMlpSSm95eVFvM1RlZXlxWHpOU3l3TW1PV1FuUWN5ekJ6Q0tOcFVYQXFRVVJaWjV2OHlEeFJLMWV4TkorcDNyci9obEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzE0MTQ4CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS4zX3g2NC1zZXR1cC5leGUKL1l5U1RCVDd3MGIybGxiNm1WYk5WYTkxTHBsSFdObzdhMHpMVXdnZlhTV3A0ZTg1NjdKK2tSQUoycGs1Z0w5VVlqdy9MTWdsS1ZCRDV2UWpNVzJ0Qmc9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.3/suoha-workbench_3.1.3_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOVBXRlA3RURLdXBsT1NjQncwNEZsaEhkKzRZRXQzM1BHM0JNSXlTb0tEMGpEcWJ3QXE3RVpMVlJReUwxN2JRMXAycGdkK0NGY1hkMkJpTlVoZkdhV2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzE3NTM3CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS40X3g2NC1zZXR1cC5leGUKL3ZSU3RscWVnQy9tdWJhRXVJTXJDRktVdllkd3ZLTHJUMUlQZ1NCcXZlNlBkS0tsVGVFemRHWlloWWJ1ZUFQa0NVS0VleVFDVTJsODNNYUNGRG90Q3c9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.4/suoha-workbench_3.1.4_x64-setup.exe"
                                          }
                   }
 }
