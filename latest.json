@@ -1,10 +1,10 @@
 {
     "version":  "3.1.4",
-    "notes":  "### 修复\n\n- 修复 3.1.3 启动后界面卡死、没有响应的问题（3.1.3 的其余新功能都保留）。",
-    "pub_date":  "2026-10-06T20:12:17Z",
+    "notes":  "### 新功能\n\n- 图表绘制支持堆积柱状图：给每个系列选一个「堆积组」，同组的摞成一摞、数量不限，不同组并排显示；还可以选百分比堆积、每节标数值或占比、每摞顶上标总数。\n- 邮件设计改用「数据项」：添加要逐期跟踪的数（可自定义单位，如个、件、桩），每期填值保存；正文里直接「插入数据项」，不用再写计算函数。\n- 数据项可设置自动比较（和上一期、历史均值、历史最高或最低比），显示成百分比或差值；涨、跌各用自己的颜色，并配斜向箭头等涨跌图标。\n- 数据项旁边能看到历次的变化曲线和历次的值，一键把变化曲线做成趋势图放进正文。\n- 原来的数据集、表达式与自定义函数收进「高级」，老模板照常能用。\n\n### 修复\n\n- 修复 3.1.3 启动后界面卡死、没有响应的问题（3.1.3 的其余新功能都保留）。\n- 邮件翻译后 {{开始日期}} 这类字段变成「⚠多余的…」的问题。已经翻坏的译文，点一次「全部重新翻译」即可。\n- 邮件翻译时图表、数据表里的文字和数据项的单位没有一起翻译的问题。",
+    "pub_date":  "2026-10-07T04:13:04Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOVBXRlA3RURLdXBsT1NjQncwNEZsaEhkKzRZRXQzM1BHM0JNSXlTb0tEMGpEcWJ3QXE3RVpMVlJReUwxN2JRMXAycGdkK0NGY1hkMkJpTlVoZkdhV2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzE3NTM3CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS40X3g2NC1zZXR1cC5leGUKL3ZSU3RscWVnQy9tdWJhRXVJTXJDRktVdllkd3ZLTHJUMUlQZ1NCcXZlNlBkS0tsVGVFemRHWlloWWJ1ZUFQa0NVS0VleVFDVTJsODNNYUNGRG90Q3c9PQo=",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUtyQ2dyTGwwT0JwOHRrWWszYUJlZ2xldmJvQTk5cnA4MEVQZkhvQnJoZVF4V0FwQWFEOEhld1pCOHJMUS81a1R2Y2tVNkRDWkEwTVdCRjNwbnZwTVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzQ2Mzg0CWZpbGU65qKt5ZOI5bel5YW35Y+wXzMuMS40X3g2NC1zZXR1cC5leGUKUVNHcGR2NFJZand2dWs1a0R5eUQwMXZ0SWhYWEdEQkJzazJZMVczMkdRTHhRRGg2WTFIVmdIcGxxZnBlQy9pSzdDeHE0SXoyYkhKRWdoSlZqOWxaQ2c9PQo=",
                                              "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v3.1.4/suoha-workbench_3.1.4_x64-setup.exe"
                                          }
                   }
