@@ -1,11 +1,11 @@
 {
-    "version":  "4.0.0",
-    "notes":  "### 新功能\n\n- 全新的设置向导：第一次安装后自动打开，一页一页设好语言、外观、开机自启、快捷键、剪贴板记录、数据位置与每日备份、浏览器扩展，不用再满设置页去找。\n- 设置向导里的「体检与修复」：开机自启失效、快捷键被别的程序占用、双击 Ctrl 没反应、本地服务没起来、右键菜单指向旧位置、备份位置不见了、窗口跑到屏幕外，一眼看清，点一下就修好，还能「全部修复」。\n- 随时可以从托盘菜单「设置向导 / 体检」或「设置 → 常规」重新打开向导；覆盖重装一遍也会回到向导里。\n- 安装程序换了新的界面图。\n- 长截图统一入口：在截图里框选浏览器的一块再点「长截图」，装了梭哈浏览器扩展就按网页里的精确位置滚动拼接，不会接错，吸顶栏、悬浮按钮只出现一次；没装扩展就用原来的方式截。网页里自带滚动条的区域（网页版聊天、在线文档）也能截。\n- 浏览器扩展新增「整页长截图」按钮和网页右键菜单；设置里可以一键引导把扩展装到 Chrome / Edge。扩展弹窗重新设计成左侧导航。\n- 截图和长截图的标注新增「荧光笔」：半透明，涂在文字上字照样看得清，可画自由曲线或直线。\n- 标注颜色新增完整色板：常用颜色各几档深浅、灰阶、荧光色、最近用过的颜色和自定义取色。\n- 排班：今天那一列加了醒目的红框；新增「复制当前值班」，一键复制团队、项目和此刻正在值班的人员（姓名、工号、角色、班次）。\n- 程序会自动记录冻屏、闪退、卡死时的情况，出问题时把记录发给作者就能定位原因；平时的运行日志不再记录。\n\n### 改进\n\n- 主界面打开更快，切换页面不再卡顿；截图复制、保存，导出 Excel，备份，搜索等操作都不会再让界面卡住。\n- 截图呼出更快。\n- 长截图拼接更稳：缩放比例不是整数、侧边栏不动的页面也能接上；实在对不上的地方会直接接上并标出接缝，可以在编辑界面里拖动去掉重复的部分。\n- 换界面语言后，所有已经打开的窗口立刻跟着换，不用重启。\n- 打开附件或链接失败时会提示原因，不再点了没反应。\n- 本地同步服务更安全：只接受本机浏览器扩展的请求，网页无法再借它弹出配对窗口或读取数据。\n\n### 修复\n\n- 截图快捷键（如 F1）偶尔失效、换了快捷键也不生效的问题。",
-    "pub_date":  "2026-10-08T21:50:08Z",
+    "version":  "4.0.1",
+    "notes":  "### 新功能\n\n- 录屏和 GIF 可以突出显示鼠标位置：鼠标所在处显示一个边缘渐变的彩色圆，点击时有一圈涟漪往外扩散，按住时圆会微微收紧，看录像的人一眼就知道鼠标在哪、点了哪里。\n- 颜色可以从预设里挑，也可以自定义；大小有小、中、大三档。\n- 可以选择录制时屏幕上显不显示这个圆；不管显不显示，只要开着这一项，录出来的视频和 GIF 里都有。在「设置 → 截图与录屏」里打开。",
+    "pub_date":  "2026-10-10T04:15:41Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOVBtditWWjM0L0NkWXNkV2xNOVhhd1g3UEZzT2MzSkNJTFBoY1RPQVpPQ2hkd3o0N09vWUUxZU5Kd3EyNFNzMU5mRStieHpyQmVhbWt3L3NYYWNFaFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDk2MjA4CWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC4wX3g2NC1zZXR1cC5leGUKRSt4eE5FTFhtaWpveHlyTU5JTThjTUVPNCtmNWtTN3hzcFd5WldNUmJnU2JJZm9TRVNNTTE1Vm5Ic1pzRFJqSUZaa1VjMVhGUXc2Sk1HaHlLQlFJQkE9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.0/suoha-workbench_4.0.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUhYZFpqOGk3TlNDUEZ2a0xQNXZqalFYUC9SWGFPbFJhSklHSHpTZzhRRU40Q0t6WlFZRnJzNnNlelVNcXpsMTZxTkczYTc5VUFvKzZBSlNUY1RjV2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjA1NzQwCWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC4xX3g2NC1zZXR1cC5leGUKam9WV3gyb2xGNnl0eUlvUGlodHRQbFJ4cHVBTmNXell6eXJZSlJzdFJwdDNtZ0pYYTFQVm9RSmlFMUpsWUlmaXhrTEg4dVo0UlJyUHB4Um9JcFNtQVE9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.1/suoha-workbench_4.0.1_x64-setup.exe"
                                          }
                   }
 }
