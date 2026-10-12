@@ -1,11 +1,11 @@
 {
-    "version":  "4.0.2",
-    "notes":  "### 新功能\n\n- 局域网互传（侧边栏「📡 局域网互传」）：同一局域网里装了梭哈工具台的电脑会自动互相发现，选一台就能把文件、文件夹直接发过去，也可以把文件拖进窗口发送。对方会弹出提示，点「接收」才开始传；全程加密，只在局域网里点对点传输，不经过任何服务器。\n- 待办卡片上新增「📡 发送给…」，可以把一条待办发给局域网里的好友，对方接收后直接出现在他的待办里。\n- 排班的「导出」窗口里新增「📡 发送给…」，选好项目和日期范围发给好友，对方收下后可以预览再导入。\n- 默认关闭，需要时在「局域网互传」页面打开；自动发现不了时（有的公司网络会拦）可以手动输入对方的 IP。\n\n### 修复\n\n- 截图时，超级剪贴板、便签、贴图以及别的程序的置顶窗口不会再盖在截图遮罩上面，它们也能被框选截下来。\n\n### 改进\n\n- 录屏、GIF、长截图结束后弹出的那个小控制条，5 秒后自己消失，不会再一直挂在屏幕上。\n- 用的是自己添加或 AI 生成的语言包时，升级后如果新版本加了文案、语言包缺了几条，会用你当前的语言提示一句，点一下就能用 AI 只补缺的那几条，已经译好的不动。",
-    "pub_date":  "2026-10-11T04:40:51Z",
+    "version":  "4.0.3",
+    "notes":  "### 改进\n\n- 局域网互传大幅提速：同时用多条连接，大文件分段并行传，一堆小文件打包一起传，网络抖动时自动重试。两边都需要升级到这个版本才能互传，旧版本的电脑会显示「对方版本较旧」。\n- 可以给局域网里的好友起备注，有备注时一直显示备注，不受对方改名影响。\n- 传输在后台进行：切到别的页面、把窗口收进托盘都不影响，别的页面右下角会显示传输进度。",
+    "pub_date":  "2026-10-12T14:40:34Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUo4QkdIbVVYVkhiSWFsLzNIYjFCUzE5SWFQV2U1aUhueTJ1Z3hTRVpyNG9SSFNYUUlyV0dCSGd5eTRJRGNKQ0hBNjlqWVB4Y2p5MUdJR1NDbnNUcndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjkzNjUwCWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC4yX3g2NC1zZXR1cC5leGUKcmxQMzNodGd2VGdsUFF2R0xxRU5COGZNZlRoZnpybkp6L2tRcjl1Uk41QzYwZVlrd3RYejk0cHRvdXV4N2luYmFvUDZoWEcyYTRDbUMwT0dRRTJlQ3c9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.2/suoha-workbench_4.0.2_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUlFR3ZqKzNFVW5HdUxUSW9iZUpjM0VZMkNJWXVJMlBlYkJJZFhvYWVKbGczYVJUeHVMcGU1RUp4NmJjMkRaQ2NFVmxIZEVZL3hEWlB1MmZOalp6UkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODE2MDMzCWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC4zX3g2NC1zZXR1cC5leGUKVGQ2L0hUSmdaOFBvUjlWZ0lKYzlwTmhJOUJDaFlKYzFIOWgxclhnc3k3TjVNYnlRTEhXMjIwOUcyZmd6dVhzOWxQbzE4NmJNcUFTREF0TENwVkFrREE9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.3/suoha-workbench_4.0.3_x64-setup.exe"
                                          }
                   }
 }
