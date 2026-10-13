@@ -1,11 +1,11 @@
 {
-    "version":  "4.0.3",
-    "notes":  "### 改进\n\n- 局域网互传大幅提速：同时用多条连接，大文件分段并行传，一堆小文件打包一起传，网络抖动时自动重试。两边都需要升级到这个版本才能互传，旧版本的电脑会显示「对方版本较旧」。\n- 可以给局域网里的好友起备注，有备注时一直显示备注，不受对方改名影响。\n- 传输在后台进行：切到别的页面、把窗口收进托盘都不影响，别的页面右下角会显示传输进度。",
-    "pub_date":  "2026-10-12T14:40:34Z",
+    "version":  "4.0.4",
+    "notes":  "### 改进\n\n- 录屏和 GIF 的鼠标点击特效分得出左右键：左键是一圈涟漪，右键是一里一外两道圈，看录像的人能分辨点的是哪个键。\n\n### Improvements\n\n- Click effects in screen recordings and GIFs now tell left and right clicks apart: a left click shows a single ripple, a right click shows two concentric rings, so viewers can see which button was pressed.",
+    "pub_date":  "2026-10-13T14:50:20Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUlFR3ZqKzNFVW5HdUxUSW9iZUpjM0VZMkNJWXVJMlBlYkJJZFhvYWVKbGczYVJUeHVMcGU1RUp4NmJjMkRaQ2NFVmxIZEVZL3hEWlB1MmZOalp6UkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODE2MDMzCWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC4zX3g2NC1zZXR1cC5leGUKVGQ2L0hUSmdaOFBvUjlWZ0lKYzlwTmhJOUJDaFlKYzFIOWgxclhnc3k3TjVNYnlRTEhXMjIwOUcyZmd6dVhzOWxQbzE4NmJNcUFTREF0TENwVkFrREE9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.3/suoha-workbench_4.0.3_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUlsR2xveXRVSWhsMnpKQnNqYlRjVzlZbXdsK0JrY05QeW10OHRScnVvUE55eGlPdFJGdTlHM3dLWmpSS2x0MnlCdE9WNWR3K0NmY2c0bHNaNWp2TVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTAzMDE5CWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC40X3g2NC1zZXR1cC5leGUKZE9UZnpXWWpwMmxXZkdJVnRESER0eVRhcmN5a3JLdjZma2dGMmYxNlZEdEFsbzE5V05uWGFNRUtCYnNkMGE1WDZMblZKR0hmdjlYNHNhT0NNWXNPQXc9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.4/suoha-workbench_4.0.4_x64-setup.exe"
                                          }
                   }
 }
