@@ -1,138 +1,96 @@
 <div align="center">
 
-# 🎰 梭哈工具台
+# 🎰 梭哈工具台 · Suoha Workbench
 
-**本地原生 GUI 桌面效率工具箱 —— 把常用本地工具一次"梭哈"，全盘托出**
+**本地原生 Windows 桌面效率工具箱 —— 把常用的小工具一次「梭哈」到一个窗口里，数据全部留在本机**
 
-基于 Python 3.13 + PySide6，文件夹分发，开箱即用，数据完全本地
+**A native Windows productivity toolbox — all your everyday little tools in one window, with every byte of data kept on your own PC**
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square&logo=python)
-![PySide6](https://img.shields.io/badge/PySide6-6.6+-41CD52?style=flat-square&logo=qt)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows)
-![Version](https://img.shields.io/badge/Version-v1.1.11-brightgreen?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-0078D6?style=flat-square&logo=windows)
+![Stack](https://img.shields.io/badge/Tauri%202-Rust%20%2B%20React-24C8DB?style=flat-square&logo=tauri)
+![Size](https://img.shields.io/badge/Installer-~7%20MB-brightgreen?style=flat-square)
+![i18n](https://img.shields.io/badge/UI-中文%20%7C%20English%20%7C%20Español-orange?style=flat-square)
+
+[中文](#中文) · [English](#english)
 
 </div>
 
 ---
 
-## 📋 目录
+## 中文
 
-- [功能概览](#-功能概览)
-- [全局能力](#-全局能力)
-- [技术架构](#-技术架构)
-- [快速开始](#-快速开始)
-- [数据与存储](#-数据与存储)
-- [打包部署](#-打包部署)
-- [二次开发指南](#-二次开发指南)
-- [常见问题](#-常见问题)
+### 📥 下载安装
 
----
+- 到本仓库的 **Releases（发行版）** 页面下载最新的 `suoha-workbench_<版本号>_x64-setup.exe`，双击安装即可。
+- 安装到当前用户目录，**不需要管理员权限**；安装包约 7 MB。
+- 支持 Windows 10（21H2 及以上）和 Windows 11，系统自带的 WebView2 即可运行。
+- 程序会自动检查更新（自有服务器 → Gitee → GitHub 依次尝试），有新版本时提示一键升级。
+- 安装时若杀毒软件提示风险：程序目前尚未购买代码签名证书，属于误报，可选择「仍要运行 / 信任」。
 
-## ✨ 功能概览
+### ✨ 主要功能
 
-梭哈工具台把日常零散的本地工具集中到一个窗口，免去四处寻找、来回切换的麻烦。主界面左侧导航分为 8 大模块：
+| 模块 | 能做什么 |
+|---|---|
+| 📋 **超级剪贴板** | `Ctrl+Shift+V` 唤出：文字、图片、文件、Excel 表格、带格式文本都能收；固定、分组、搜索，Enter 原样粘贴、Tab 纯文本粘贴 |
+| ✂️ **截图 / 贴图 / 长截图** | 框选截图并标注（箭头、马赛克、荧光笔、文字…），贴到桌面置顶；网页长截图配合浏览器扩展精确拼接 |
+| 🎬 **录屏 / GIF** | 录制屏幕区域为视频或 GIF；鼠标聚光，点击有涟漪特效，左右键可区分 |
+| 🔍 **聚合搜索** | 双击 `Ctrl` 呼出，一个框搜网址、工具、待办、剪贴板记录和本机文件 |
+| ✅ **待办管家** | 四象限待办、链接 / 附件 / 求助人、逾期提醒、桌面便签 |
+| 🔄 **闭环管理** | 长线事项跟踪：背景、进展时间线、里程碑、闭环结论，一键导出回溯 |
+| 📅 **排班管理** | 按团队 / 项目排班，合同约束与自动预警，工时汇总与图表，导出 Excel |
+| 📡 **局域网互传** | 同一局域网自动发现，定向发送文件、文件夹、待办、排班；对方确认才接收，端到端加密，不经服务器 |
+| 🧭 **网址导航** | 分类书签、自定义搜索引擎、批量添加与分享 |
+| 🎓 **记忆大师** | 自建词典与知识点，悬浮卡片定时滚动记忆，AI 生成导入 |
+| 🛠️ **工具工坊** | 图表绘制、邮件设计、时区时钟、汇率、JSON、正则、二维码、密码管理等数十个小工具 |
+| 🧠 **记忆长廊** | 剪贴板自动归档，按日历浏览、全文搜索 |
+| 🌐 **多语言** | 内置中文、English、Español，可用 AI 一键生成其他语言 |
 
-| 模块 | 功能要点 |
-|------|---------|
-| 🧭 **网址导航** | 多分类书签、自定义搜索引擎（图标本地缓存）、批量添加、分享与好友系统 |
-| 🎓 **记忆大师** | 自建知识词典（单词 / 短语 / 知识点），悬浮卡片定时滚动记忆，离线朗读，AI 智能生成导入 |
-| 🛠️ **工具工坊** | **28 个**效率工具，详见下文 |
-| ⚡ **一指神功** | 快捷动作中心：C 盘清理（可勾选 / 可中断）、进程管理、自定义脚本一键触发 |
-| ✅ **待办管家** | 四象限待办，多链接、求助人、图片附件、逾期提醒，本地 ICS 同步接口 |
-| 🔄 **闭环管理** | 长线事项跟踪：背景 / 进展时间线 / 里程碑 / 闭环结论，关联链接·目录·图片·人员，一键回溯导出（含时区换算） |
-| 🧠 **记忆长廊** | 剪切板自动归档（文本 / 图片 / 文件），按日历浏览，**Chrome 式滚动跨天**，左侧日历联动高亮，全文搜索 |
-| 📊 **数据看板** | 使用情况与记录统计图表 |
+### 🔒 隐私
 
-### 🛠️ 工具工坊（28 个工具）
+- 所有数据存放在本机（`~/.suoha-console/`），不上传任何服务器。
+- 局域网互传只在局域网内点对点加密传输。
+- AI 功能需要你自己填写所用服务的密钥，请求直接从本机发往你选择的服务。
 
-临时文本、DeepSeek 问答、密码管理器、字符统计、Emoji 搜索、翻译、图片转码、图片裁缝、百变抽选、脚本执行、文件查找、接口测试、时区查看、汇率转换、大小写转换、进制转换、Base64、URL 编解码、**JSON（格式化 / 实体类导出）**、**正则表达式（快捷插入 / 多语言导出）**、文本对比、压缩解压、哈希计算、颜色转换、时间戳、二维码、速算、时间算盘。
+### 📝 更新记录
 
----
-
-## 🌐 全局能力
-
-不进主界面也能用的随手能力：
-
-- **超级剪贴板**（`Ctrl+Shift+V` 全局唤起）
-  整合系统剪切板历史 + 记忆长廊，按时间倒序显示最近 N 条。支持：
-  - 文字 / 图片 / 文件三类，📌 固定 / 📋 剪切板 / 🧠 记忆 三种标识可叠加显示；
-  - **固定与分组**：右键固定到分组，"只显示固定"按分组浏览，Tab / 单击进组、Enter 上屏、右键取消固定 / 移动分组；
-  - **固定置顶**可按分组分段显示在最前；
-  - 可设最大条数、跨天聚合、失效文件显隐。
-- **聚合搜索**（双击 `Ctrl` 唤起）
-  一个输入框搜书签、应用、文件、工具等；系统应用（计算器 / 控制面板 / 画图 / 设置 / 终端…）显示真实图标。
-- **悬浮便签**：系统托盘触发，始终置顶，显示当天紧急待办。
-- **自动更新**：启动后静默检查新版本，可一键下载并自动覆盖重启。
-- **自定义快捷键**：在设置中改全局 / 应用内快捷键，支持冲突检测，改完即时生效。
-- **开机自启**：自愈式写入注册表，移动目录后自动修复路径。
-
-**设计原则**
-- ✅ 纯本地运行，SQLite 存储（DeepSeek 问答和 AI 导入需联网）
-- ✅ 文件夹分发，启动快，无需安装运行时
-- ✅ 数据与程序分离，多处运行共享同一数据库
-- ✅ 亮 / 暗色主题自由切换
+每个版本的变化见 [Releases](../../releases) 页面，程序内「检查更新」也会显示。
 
 ---
 
-## 🏗️ 技术架构
+## English
 
-```
-┌──────────────────────────────────────────────────────┐
-│                    梭哈工具台                          │
-├─────────────┬────────────────┬────────────────────────┤
-│   GUI 层    │   业务逻辑层    │       数据层           │
-│  PySide6    │   Python 3.13  │  SQLite (database.py)  │
-│  各 page /  │  工具 / 服务 /  │  本地单文件数据库      │
-│  工坊工具   │  全局管理器     │  数据与程序分离        │
-└─────────────┴────────────────┴────────────────────────┘
-```
+### 📥 Download & Install
 
-- **页面注册**：主窗口按导航键加载各 `pages/*.py`，懒加载。
-- **工坊工具注册**：`pages/workshop_page.py` 的 `MODULES` 列出工具模块，工具用 `@register_tool` 装饰自动登记。
-- **全局服务**：剪贴板监控、聚合搜索、便签、本地同步接口、自动更新等在 `main.py` 启动时挂载。
+- Grab the latest `suoha-workbench_<version>_x64-setup.exe` from this repository's **Releases** page and double-click to install.
+- Installs per user — **no administrator rights needed**; the installer is about 7 MB.
+- Runs on Windows 10 (21H2 or later) and Windows 11 using the built-in WebView2.
+- Updates are checked automatically (own server → Gitee → GitHub, in that order) and installed with one click.
+- If your antivirus warns during install: the app is not code-signed yet, so this is a false positive — choose "Run anyway / Trust".
 
----
+### ✨ Features
 
-## 🚀 快速开始
+| Module | What it does |
+|---|---|
+| 📋 **Super Clipboard** | Press `Ctrl+Shift+V`: keeps text, images, files, Excel tables and rich text; pin, group, search; Enter pastes as-is, Tab pastes plain text |
+| ✂️ **Screenshot / Pin / Scrolling capture** | Region capture with annotations (arrows, mosaic, highlighter, text…), pin to the desktop; precise full-page web captures with the browser extension |
+| 🎬 **Screen recording / GIF** | Record a region to video or GIF; cursor spotlight with click ripples that tell left and right clicks apart |
+| 🔍 **Quick Search** | Double-tap `Ctrl` to search bookmarks, tools, todos, clipboard history and local files from one box |
+| ✅ **Todos** | Eisenhower-matrix todos with links, attachments, helpers, overdue reminders and desktop sticky notes |
+| 🔄 **Close-the-Loop** | Track long-running matters: background, progress timeline, milestones, conclusion, one-click export |
+| 📅 **Shift Scheduling** | Team / project rosters with contract rules, automatic warnings, hour summaries, charts and Excel export |
+| 📡 **LAN Transfer** | Auto-discovers peers on your LAN; send files, folders, todos or rosters to a chosen person; receiver must accept; end-to-end encrypted, no server involved |
+| 🧭 **Bookmarks** | Categorised links, custom search engines, bulk add and sharing |
+| 🎓 **Memory Master** | Your own vocabulary and knowledge cards, floating flash cards, AI-assisted import |
+| 🛠️ **Workshop** | Dozens of tools: chart maker, email designer, world clock, currency, JSON, regex, QR codes, password manager and more |
+| 🧠 **Memory Gallery** | Automatic clipboard archive, browse by calendar, full-text search |
+| 🌐 **Languages** | Chinese, English and Español built in; generate any other language with AI in one click |
 
-1. 解压分发包到任意目录（建议非系统盘）。
-2. 双击 `梭哈工具台.exe`（或 `python main.py` 源码运行）。
-3. 首次启动会在用户目录创建数据库；可在设置中指定数据目录、主题、开机自启等。
+### 🔒 Privacy
 
-> 全局唤起：`Ctrl+Shift+V` 超级剪贴板，双击 `Ctrl` 聚合搜索。
+- All data stays on your PC (`~/.suoha-console/`); nothing is uploaded.
+- LAN Transfer is peer-to-peer and encrypted, inside your local network only.
+- AI features use your own API key; requests go straight from your PC to the service you choose.
 
----
+### 📝 Changelog
 
-## 💾 数据与存储
-
-- 数据库：`%USERPROFILE%\.suoha-console\suoha.db`（SQLite 单文件）。
-- 程序与数据分离：换目录、换机器只要带上数据库即可延续。
-- 图片 / 文件类记忆记录路径，原文件移动或删除后会标记为"已失效"。
-
----
-
-## 📦 打包部署
-
-- 使用 `build.bat` 打包（纯 ASCII + CRLF），产物为文件夹分发包，内含 `updater.exe` 以支持自动更新。
-- 新增 `.py` 工具模块时，记得在 `MODULES` 注册并随包打入。
-
----
-
-## 🧩 二次开发指南
-
-详见随包 `dev-docs.html`（开发文档），涵盖页面注册、工坊工具注册、数据库迁移、主题令牌等扩展约定。
-
----
-
-## ❓ 常见问题
-
-- **超级剪贴板呼出为空？** 确认"启用剪贴板监听"已开；首次运行需复制几次或等记忆长廊积累记录。
-- **系统应用没有图标？** 图标在 Windows 上从应用包 / System32 解析，少数纯商店应用可能仍为通用图标。
-- **切换主题没全部生效？** 主题切换会自动重启以完全应用（浮窗、弹窗等）。
-- **数据安全？** 全部本地存储，不上传；联网仅限 DeepSeek 问答与 AI 导入。
-
----
-
-<div align="center">
-当前版本 v1.1.11 · 把本地工具一次梭哈，全盘托出
-</div>
+See the [Releases](../../releases) page for what changed in each version; the in-app "Check for updates" shows it too.
