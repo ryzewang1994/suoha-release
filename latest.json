@@ -1,11 +1,11 @@
 {
-    "version":  "4.0.4",
-    "notes":  "### 改进\n\n- 录屏和 GIF 的鼠标点击特效分得出左右键：左键是一圈涟漪，右键是一里一外两道圈，看录像的人能分辨点的是哪个键。\n\n### Improvements\n\n- Click effects in screen recordings and GIFs now tell left and right clicks apart: a left click shows a single ripple, a right click shows two concentric rings, so viewers can see which button was pressed.",
-    "pub_date":  "2026-10-13T14:50:20Z",
+    "version":  "4.0.5",
+    "notes":  "### 改进\n\n- 截图时置顶窗口挡住遮罩的问题处理得更及时：别的窗口一冒出来、一抢到最前面，截图界面马上回到最上层，也不会抢走焦点；截图里写字时输入法候选框照常显示。\n- 同时钉了好几张贴图时，不会再隔一会儿就互相换位置，最后点的那张一直在最上面。\n- 贴图换了系统阴影，加一圈明暗细边，放在白色或黑色背景上都分得清边界。\n- 录屏暂停期间的鼠标点击，不会再出现在继续之后的录像里；录像里的鼠标指针和聚光圆始终重合，不会一前一后。\n\n### Improvements\n\n- Windows that pop up over the screenshot overlay are dealt with faster: the overlay returns to the top as soon as another window appears or comes to the front, without stealing focus, and the IME candidate list still shows when typing text on a screenshot.\n- With several pinned images on screen, they no longer reshuffle every few seconds; the one you clicked last stays on top.\n- Pinned images now use the system shadow plus a thin light-and-dark border, so their edges are visible on both white and black backgrounds.\n- Clicks made while a recording is paused no longer appear after it resumes, and the recorded cursor and spotlight circle always stay together.",
+    "pub_date":  "2026-10-21T03:39:52Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUlsR2xveXRVSWhsMnpKQnNqYlRjVzlZbXdsK0JrY05QeW10OHRScnVvUE55eGlPdFJGdTlHM3dLWmpSS2x0MnlCdE9WNWR3K0NmY2c0bHNaNWp2TVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTAzMDE5CWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC40X3g2NC1zZXR1cC5leGUKZE9UZnpXWWpwMmxXZkdJVnRESER0eVRhcmN5a3JLdjZma2dGMmYxNlZEdEFsbzE5V05uWGFNRUtCYnNkMGE1WDZMblZKR0hmdjlYNHNhT0NNWXNPQXc9PQo=",
-                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.4/suoha-workbench_4.0.4_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQ2M4aWUvdThSOUVVTkRpWWE4bUF5Ulp1aXE3ZlRmc3NqdjdZcU9YQUt1ajAzQmNiQUdrZ0x0cURIM3VUTHZJZlpQTGFxcmNlMFRMdTd2VmxjRUFTQ1RkdHFKOXFWMXdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTUzOTkxCWZpbGU65qKt5ZOI5bel5YW35Y+wXzQuMC41X3g2NC1zZXR1cC5leGUKQWorTGdNTkpGLzdOUTVrcWxmQTZ4REE3T1QzRXIyaUdvUjI1MUF5OUdzTENWT0FXenAwVzVwWGRWOVlTRmZXQVlCTDk0Zy9Ga1pNWTVMRGpmY2l4REE9PQo=",
+                                             "url":  "https://github.com/ryzewang1994/suoha-release/releases/download/v4.0.5/suoha-workbench_4.0.5_x64-setup.exe"
                                          }
                   }
 }
