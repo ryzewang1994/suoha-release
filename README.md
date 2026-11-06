@@ -42,6 +42,7 @@
 | 🧭 **网址导航** | 分类书签、自定义搜索引擎、批量添加与分享 |
 | 🎓 **记忆大师** | 自建词典与知识点，悬浮卡片定时滚动记忆，AI 生成导入 |
 | 🛠️ **工具工坊** | 图表绘制、邮件设计、时区时钟、汇率、JSON、正则、二维码、密码管理等数十个小工具 |
+| 🪄 **浮窗控件** | 桌面置顶小图标，按住往不同方向拖打开待办、时区、记忆卡片、临时文本，可一键隐藏全部浮窗，图标和快捷键可自定义 |
 | 🧠 **记忆长廊** | 剪贴板自动归档，按日历浏览、全文搜索 |
 | 🌐 **多语言** | 内置中文、English、Español，可用 AI 一键生成其他语言 |
 
@@ -82,6 +83,7 @@
 | 🧭 **Bookmarks** | Categorised links, custom search engines, bulk add and sharing |
 | 🎓 **Memory Master** | Your own vocabulary and knowledge cards, floating flash cards, AI-assisted import |
 | 🛠️ **Workshop** | Dozens of tools: chart maker, email designer, world clock, currency, JSON, regex, QR codes, password manager and more |
+| 🪄 **Float Launcher** | A small always-on-top icon: hold and drag in a direction to open todos, time zones, memory cards or temp text, hide all floating windows at once, and pick your own icon and shortcut |
 | 🧠 **Memory Gallery** | Automatic clipboard archive, browse by calendar, full-text search |
 | 🌐 **Languages** | Chinese, English and Español built in; generate any other language with AI in one click |
 
